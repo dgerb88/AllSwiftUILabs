@@ -23,12 +23,12 @@ struct ContentView: View {
                 Spacer()
                 if goTime == false {
                     Text(textToShow)
-                        .font(.system(size: startAnimation ? 40 : 90))
+                        .scaleEffect(startAnimation ? 1 : 4)
                         .opacity(startAnimation ? 0.0 : 1)
                         .foregroundStyle(.white)
                 } else {
                     Text("GO!")
-                        .font(.system(size: go ? 40 : 90))
+                        .scaleEffect(go ? 1 : 4)
                         .foregroundStyle(.white)
                 }
                 Spacer()
